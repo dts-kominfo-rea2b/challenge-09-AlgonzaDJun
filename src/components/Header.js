@@ -5,8 +5,8 @@ import './Header.css';
 const Header = () => {
     return (
         <header>
-            <h1>Cari Kontak Teman</h1>
-            <p id='subjud'>Aplikasi Pencari Kontak Teman</p>
+            <h1>call a friend</h1>
+            <p id='subjud'>your friendly contact app</p>
         </header>
         
     )
