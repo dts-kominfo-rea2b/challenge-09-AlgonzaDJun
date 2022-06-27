@@ -4,10 +4,11 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div id='header'>
+        <header>
             <h1>Cari Kontak Teman</h1>
             <p id='subjud'>Aplikasi Pencari Kontak Teman</p>
-        </div>
+        </header>
+        
     )
 }
 
