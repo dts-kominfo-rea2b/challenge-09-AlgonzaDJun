@@ -4,19 +4,25 @@ import React from "react";
 import "./Contact.css";
 
 const Contact = (props) => {
-  const { photo, name, email, phone } = props.data;
+  // const { photo, name, email, phone } = props.data;
   return (
-    <div className="container">
-      <div className="avatar">
-        <img src={photo} alt="" />
-      </div>
-      <div className="content">
-        <h2>{name}</h2>
-        <p id="phone">{phone}</p>
-        <p id="email">{email}</p>
-      </div>
-    </div>
-  );
-};
+    <>
+        { props.data.map((contact) => {
+          return (
+            <div key={contact.email} className="container">
+              <div className="avatar">
+                <img src={contact.photo} alt="" />
+              </div>
+              <div className="content">
+                <h2> {contact.name}</h2>
+                <p id="phone">{contact.phone}</p>
+                <p id="email">{contact.email}</p>
+              </div>
+            </div>
+        )
+        })}
+    </>
+  )
+}
 
 export default Contact;
